@@ -10,6 +10,7 @@ export default class LinksListItem extends React.Component {
       justCopied: false
     };
   }
+  
   componentDidMount() {
     this.clipboard = new Clipboard(this.refs.copy);
 
