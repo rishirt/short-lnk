@@ -10,7 +10,6 @@ if (Meteor.isServer) {
     return Links.find({ userId: this.userId });
   });
 }
-
 Meteor.methods({
   'links.insert'(url) {
     if (!this.userId) {
